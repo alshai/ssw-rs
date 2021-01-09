@@ -143,6 +143,7 @@ unsafe fn _mm_cmpgt_epi8_bool(a: __m128i, b: __m128i) -> bool {
 }
 
 #[allow(dead_code)]
+// https://doi.org/10.1093/bioinformatics/btl582
 pub unsafe fn ssw_8bit(opts: &SWOptions, t: &[u8], q: &[u8]) -> i8 {
     let _q = acgt_to_num(q);
     let _t = acgt_to_num(t);
